@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>opener_document</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.4; margin: 2rem; }
+    .skip-link { position: absolute; left: -9999px; top: 0; background: #fff; color: #000; padding: .5rem .8rem; border: 2px solid #0b57d0; z-index: 1000; }
+    .skip-link:focus { left: 1rem; top: 1rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+    h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+    h2 { font-size: 1.35rem; margin-top: 0; }
+    h3 { font-size: 1.1rem; margin-top: 1rem; }
+    h6 { font-size: 12px; }
+    section { border: 1px solid #d9d9d9; border-top: 4px solid var(--depth-border-color, #002856); padding: .8rem 1rem; margin-bottom: .9rem; }
+    nav ul, section ul { margin-left: 1.2rem; }
+    dl dt { font-weight: 700; margin-top: .7rem; }
+    dl dd { margin-left: 1rem; margin-bottom: .6rem; }
+    a { color: #0b57d0; text-decoration: underline; }
+    a:focus-visible,
+    main:focus,
+    section:focus,
+    dt:focus {
+      outline: 3px solid #0b57d0;
+      outline-offset: 2px;
+    }
+    main:target,
+    section:target,
+    dt:target {
+      outline: 3px solid #0b57d0;
+      outline-offset: 2px;
+      scroll-margin-top: 1rem;
+    }
+    @media print {
+      a { color: inherit; }
+      .skip-link { display: none; }
+      @page { margin: 20mm; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#org-structure">Zum Inhaltsbereich springen</a>
+  <header>
+    <h1>Organigramm der/des Beispiel Bezirksamt</h1>
+    <p>Dieses Organigramm ist hierarchisch aufgebaut. Nutzen Sie die 
+Überschriftennavigation Ihres Screenreaders, um zwischen 
+Organisationsebenen zu wechseln.</p>
+    <p>Stand des Organigramms: <time datetime="2022-02-22">22. Februar 2022</time></p>
+    <p>Es enthält 6 Organisationseinheiten in 3 Ebenen und nennt 5 Personen.</p>
+    <p>Kontaktangaben sind teilweise vorhanden (Organisationen: 1, Personen: 5).</p>
+    <p>Begriffserklärungen finden Sie teilweise im Glossar.</p>
+  </header>
+
+  <nav aria-label="Inhaltsverzeichnis">
+    <h2>Inhaltsverzeichnis</h2>
+    <ul>
+      <li><a href="#org-oberste-organisationseinheit">Oberste Organisationseinheit</a>
+<ul>
+<li><a href="#org-organisationsuntereinheit-1">Organisationsuntereinheit 1</a></li>
+<li><a href="#org-organisationsuntereinheit-2">Organisationsuntereinheit 2</a></li>
+<li><a href="#org-organisationsuntereinheit-3">Organisationsuntereinheit 3</a>
+<ul>
+<li><a href="#org-nachgeordnete-organisationseinheit">Nachgeordnete Organisationseinheit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org-nebengeordnete-organisationseinheit">Nebengeordnete Organisationseinheit</a></li>
+      
+    </ul>
+  </nav>
+
+  <main id="org-structure" tabindex="-1">
+    
+        <section id="org-oberste-organisationseinheit" tabindex="-1" data-level-depth="0" style="--depth-border-color: #002856">
+          <h2>Oberste Organisationseinheit</h2>
+          
+          <p>Diese Organisationseinheit hat 3 direkt untergeordnete Organisationseinheiten. Die direkt untergeordneten Einheiten sind: <a href="#org-organisationsuntereinheit-1">Organisationsuntereinheit 1</a>, <a href="#org-organisationsuntereinheit-2">Organisationsuntereinheit 2</a>, <a href="#org-organisationsuntereinheit-3">Organisationsuntereinheit 3</a></p>
+          <ul><li><strong>Personen und Aufgaben:</strong><ul><li> Dr. Erika Muster <span>(Kontakt: <a href="tel:030345678" aria-label="Telefon von Dr. Erika Muster">Telefon</a> | <a href="mailto:muster@berlin.de" aria-label="E-Mail an Dr. Erika Muster">E-Mail</a>)</span></li></ul></li><li><strong>Kontakt:</strong> <a href="https://www.berlin.de/" aria-label="Webseite der Organisationseinheit Oberste Organisationseinheit">Webseite</a></li></ul>
+          
+        </section>
+      
+
+        <section id="org-nebengeordnete-organisationseinheit" tabindex="-1" data-level-depth="0" style="--depth-border-color: #002856">
+          <h3>Nebengeordnete Organisationseinheit</h3>
+          
+          
+          <ul><li><strong>Übergeordnete Einheit:</strong> <a href="#org-oberste-organisationseinheit">Oberste Organisationseinheit</a></li></ul>
+          
+        </section>
+      
+
+        <section id="org-organisationsuntereinheit-1" tabindex="-1" data-level-depth="1" style="--depth-border-color: #004F9F">
+          <h4>Organisationsuntereinheit 1</h4>
+          
+          
+          <ul><li><strong>Übergeordnete Einheit:</strong> <a href="#org-oberste-organisationseinheit">Oberste Organisationseinheit</a></li><li><strong>Art:</strong> Abteilung</li><li><strong>Personen und Aufgaben:</strong><ul><li>Abteilungsleiter: Max Muster <span>(Kontakt: <a href="tel:030343566" aria-label="Telefon von Max Muster">Telefon</a>)</span></li><li>Stellvertretende Abteilungsleiterin: Miriam Muster <span>(Kontakt: <a href="tel:030565767" aria-label="Telefon von Miriam Muster">Telefon</a>)</span></li></ul></li></ul>
+          <h5>Zugehörige Einheiten</h5><ul><li>Sekretariat<ul><li>Marie Tester <span>(Kontakt: <a href="tel:0303568355" aria-label="Telefon von Marie Tester">Telefon</a>)</span></li><li>Tim Tester <span>(Kontakt: <a href="tel:0303457689" aria-label="Telefon von Tim Tester">Telefon</a>)</span></li></ul></li></ul>
+        </section>
+      
+
+        <section id="org-organisationsuntereinheit-2" tabindex="-1" data-level-depth="1" style="--depth-border-color: #004F9F">
+          <h4>Organisationsuntereinheit 2</h4>
+          
+          
+          <ul><li><strong>Übergeordnete Einheit:</strong> <a href="#org-oberste-organisationseinheit">Oberste Organisationseinheit</a></li></ul>
+          
+        </section>
+      
+
+        <section id="org-organisationsuntereinheit-3" tabindex="-1" data-level-depth="1" style="--depth-border-color: #004F9F">
+          <h4>Organisationsuntereinheit 3</h4>
+          
+          <p>Diese Organisationseinheit hat 1 direkt untergeordnete Organisationseinheiten. Die direkt untergeordneten Einheiten sind: <a href="#org-nachgeordnete-organisationseinheit">Nachgeordnete Organisationseinheit</a></p>
+          <ul><li><strong>Übergeordnete Einheit:</strong> <a href="#org-oberste-organisationseinheit">Oberste Organisationseinheit</a></li></ul>
+          
+        </section>
+      
+
+        <section id="org-nachgeordnete-organisationseinheit" tabindex="-1" data-level-depth="2" style="--depth-border-color: #4F90CD">
+          <h5>Nachgeordnete Organisationseinheit</h5>
+          
+          
+          <ul><li><strong>Übergeordnete Einheit:</strong> <a href="#org-organisationsuntereinheit-3">Organisationsuntereinheit 3</a></li></ul>
+          
+        </section>
+      
+    
+  </main>
+
+</body></html>

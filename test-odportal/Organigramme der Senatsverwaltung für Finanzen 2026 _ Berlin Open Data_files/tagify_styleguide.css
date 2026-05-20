@@ -1,0 +1,56 @@
+.tagify--outside {
+  border: 0;
+}
+
+.tagify--outside .tagify__input {
+  order: -1;
+  flex: 100%;
+
+  display: block;
+  border-radius: 0px;
+  font-size: 1em;
+  width: 100%;
+  min-height: 43px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #000;
+  color: #000;
+  padding: 10px;
+  transition: border-color .16s ease-in-out 0s, box-shadow .16s ease-in-out 0s;
+  max-width: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.tagify--outside .tagify__input:hover {
+  border-color: initial;
+}
+
+.tagify--outside.tagify--focus .tagify__input {
+  border: 2px solid #0076dd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0px 8px 0px rgba(102, 175, 233, .8);
+  outline: 2px solid #fff;
+  outline-offset: 0px;
+}
+
+.form-control.tagify {
+  padding: 1px;
+}
+
+.tagify__tag {
+  display: none;
+}
+
+.tagify__dropdown__wrapper {
+  max-height: 300px;
+  overflow: hidden;
+  background: #fff;
+  background: var(--tagify-dd-bg-color);
+  border: 2px solid #0076dd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0px 8px 0px rgba(102, 175, 233, .8);
+  outline: 2px solid #fff;
+  outline-offset: 0px;
+  transition: .25s cubic-bezier(0, 1, .5, 1)
+}

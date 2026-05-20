@@ -1,0 +1,35 @@
+.herounit-homepage .image__overlay .inner h1 {
+  text-align: left;
+  width: 100%;
+}
+
+#layout-grid__area--herounit .searchlocation {
+  display: none; /* Don't show search location selector on homepage */
+}
+
+/* Teasers */
+
+/* our images don't have the styleguide's 4/3 aspect ratio,
+so we need to disable the static aspect-ratio setting */
+.modul-teaser.dp-teaser .image__image {
+  aspect-ratio: auto;
+}
+
+/* 404 Page */
+
+.herounit-404--asset {
+  text-align: center;
+}
+
+.herounit-404--asset .title {
+  font-size: 64px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.herounit-404--asset .subtitle {
+  font-size: 26px;
+  color: #007aa3;
+  border: 0 none;
+  margin: 20px 0;
+}

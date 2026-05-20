@@ -1,0 +1,238 @@
+/* additional bicons */
+
+:root {
+  --dpicon-pen: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M290.7%2093.2l128%20128-278%20278-114.1%2012.6C11.4%20513.5-1.6%20500.6%20.1%20485.3l12.7-114.2%20277.9-277.9zm207.2-19.1l-60.1-60.1c-18.8-18.8-49.2-18.8-67.9%200l-56.6%2056.6%20128%20128%2056.6-56.6c18.8-18.8%2018.8-49.2%200-67.9z%22/%3E%3C/svg%3E");
+}
+
+#dp-open-datenregister .dp-button-pen:after, .dp-button-pen:after {
+  -webkit-mask-image: var(--dpicon-pen);
+  mask-image: var(--dpicon-pen);
+}
+
+
+.dp-dataset-metadatum {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.dp-dataset-metadatum__row {
+  display: flex;
+  column-gap: 10px;
+}
+
+.dp-dataset-metadatum__header {
+  font-size: 11px;
+  color: #454545;
+  margin-bottom: 6px;
+}
+
+.dp-dataset-metadatum__body {
+  font-size: 14px;
+}
+
+.dp-resource-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dp-resource-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 10px;
+}
+
+.dp-resource-icon-mini {
+  height: 23px;
+  background-color: #DDDDDD;
+  border-top: solid 4px;
+  height: 19px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.dp-resource-icon-label {
+  color: #454545;
+  font-family: "Courier New";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.dp-resource-icon-mini.dp-resource-tabular {
+  border-top-color: #96B223; /* lime 500 */
+}
+.dp-resource-icon-mini.dp-resource-gis {
+  border-top-color: #0396B7; /* cyan 600 */
+}
+.dp-resource-icon-mini.dp-resource-textual {
+  border-top-color: #F61C35; /* red 500 */
+}
+.dp-resource-icon-mini.dp-resource-website {
+  border-top-color: #FCC832; /* amber 400 */
+}
+.dp-resource-icon-mini.dp-resource-feed {
+  border-top-color: #EC7AA0; /* fuchsia 400 */
+}
+.dp-resource-icon-mini.dp-resource-tree {
+  border-top-color: #F5A00C; /* amber 500 */
+}
+.dp-resource-icon-mini.dp-resource-3d {
+  border-top-color: aqua;
+}
+.dp-resource-icon-mini.dp-resource-transport {
+  border-top-color: darkslategray;
+}
+.dp-resource-icon-mini.dp-resource-api {
+  border-top-color: #9380CC; /* violet 500 */
+}
+.dp-resource-icon-mini.dp-resource-archive {
+  border-top-color: fuchsia;
+}
+.dp-resource-icon-mini.dp-resource-bitmap {
+  border-top-color: dodgerblue;
+}
+.dp-resource-icon-mini.dp-resource-generic {
+  border-top-color: wheat;
+}
+
+/* Colored panels in the download module (for special resources like WFS Explorer) should have all text white . */
+.modul-download.panel--colored .title, .modul-download.panel--colored .doc-type {
+  color: #ffffff;
+}
+
+.dp-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Sorting of search results */
+
+.dp-search-result-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dp-search-result-summary {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.dp-search-result-sort {
+  min-width: 200px;
+}
+
+/* custom select */
+
+.dp-select select {
+  /* A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  padding-right: 20px;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+
+  /* Stack above custom arrow */
+  z-index: 1;
+
+  /* Remove focus outline, will add on alternate element */
+  outline: none;
+}
+
+.dp-select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+
+  min-height: 43px;
+  min-width: 15ch;
+  max-width: 30ch;
+
+  border: 2px solid #000;
+  border-radius: 0px;
+  padding: 0 10px 0 0;
+  margin: 0;
+
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #000;
+  cursor: pointer;
+
+  /* Optional styles, remove for transparency */
+  background-color: #fff;
+  background-image: none;
+}
+
+/* Custom arrow */
+.dp-select::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", FontAwesome;
+  font-weight: 700;
+  margin-left: 0.5em;
+  display: inline-block;
+  vertical-align: baseline;
+  justify-self: end;
+}
+
+.dp-select select,
+.dp-select::after {
+  grid-area: select;
+}
+
+.dp-select select:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.dp-select select:focus+.focus {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 2px solid #0076dd;
+  border-radius: inherit;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0px 8px 0px rgba(102, 175, 233, .8);
+  outline: 2px solid #fff;
+  outline-offset: 0px;
+}
+
+
+/* message boxes with icons */
+
+.dp-message {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dp-message-icon {
+  align-self: center;
+  font-size: 300%;
+  padding-left: 10px;
+}
+
+/* dataset images */
+
+.textbildbreit .dataset img {
+  max-height: 450px;
+}
